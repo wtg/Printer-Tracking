@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8">
+<title>Print Queue Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Track RPI printer queues in real-time.">
+<meta name="author" content="RPI Student Senate Web Technologies Group">
+
+<link rel="apple-touch-icon-precomposed" href="img/ati-57.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ati-72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ati-114.png" />
+
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<!--<link href="css/bootstrap-responsive.css" rel="stylesheet">-->
+<link href="css/application2.css" rel="stylesheet">
+<link href="css/curl.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src='js/jquery-1.6.2.js' type='text/javascript'></script>
+<script src='js/mich2.js' type='text/javascript'></script>
+
+</head>
+
+<body>
+	<!--header used to be in container-->
+	<header class='header'>
+		<div id='header'>
+		RENSSELAER PRINT QUEUES
+		</div>
+	</header><!--end header-->
+
+	<div class='container'>
+
+		<div id='locations'>
+
+			<div class='loc selected'>Amos Eaton</div>
+			<div class='loc'>CII</div>
+			<div class='loc'>Dorms</div>
+			<div class='loc'>Greene</div>
+			<div class='loc'>JEC</div>
+			<div class='loc'>Lally</div>
+			<div class='loc'>Library</div>
+			<div class='loc'>MRC</div>
+			<div class='loc'>Pittsburgh</div>
+			<div class='loc'>Sage Labs</div>
+			<div class='loc'>Troy</div>
+			<div class='loc'>Union</div>
+			<div class='loc'>VCC</div>
+			<div class='loc'>Walker</div>
+
+
+		</div><!--end locations-->
+
+		<div id='content'>
+
+			<!-- AMOS EATON PRINTERS -->
+			<div id='amos-eaton' class='printer-list'>
+
+				<div class='printer'>
+					<span class='name'>ae215lw</span> [ AE 215 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ae215lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ae215lw<br/>
+				</div><div style='height:10px'></div>
+
+				<div class='printer'>
+					<span class='name'>ae216lw</span> [ AE 216 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ae216lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ae216lw<br/>
+				</div><div style='height:10px'></div>
+			
+			</div><!--end amos eaton-->
+
+			<!-- AMOS EATON MAP -->
+			<div id='amos-eaton-map' class='map'>
+				<div class='floor-selector'>All</div>
+				<div class='floor-selector'>floor 2</div>
+				<div style='clear:both'></div>
+
+				
+				<div class='map-img' class='amost-eaton-map' id='floor-2'>
+				<div class='floor'>floor 2</div>
+				<img src='img/amoseaton2.png'/></div>
+			</div><!--end amos eaton map-->
+			
+
+
+			<!-- CII PRINTERS -->
+			<div id='cii' class='printer-list' style='display:none'>
+
+				<div class='printer'>
+					<span class='name'>ci3112lw</span> [ CII 3112 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ci3112lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ci3112lw<br/>
+				</div><div style='height:10px'></div>
+
+				<div class='printer'>
+					<span class='name'>ci3116lw</span> [ CII 3116 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ci3116lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ci3116lw<br/>
+				</div><div style='height:10px'></div>
+
+				<div class='printer'>
+					<span class='name'>ci3130lw</span> [ CII 3130 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ci3130lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ci3130lw<br/>
+				</div><div style='height:10px'></div>
+
+				<div class='printer'>
+					<span class='name'>ci3130p3</span> [ CII 3130 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Color<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.02/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ci3130p3<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ci3130p3<br/>
+				</div><div style='height:10px'></div>
+
+				<div class='printer'>
+					<span class='name'>ci4034lw</span> [ CII 4034 ]<span class='on'>online</span><br/>
+					<span class='italic'>No jobs in queue.</span>
+				</div>
+				<div class='details' style='display:none'>
+					<span class='label'>Color</span> Black &amp; White<br/>
+					<span class='label'>Type</span> Printer<br/>
+					<span class='label'>Cost</span> $0.08/page + $0.02/job<br/>
+					<span class='label'>32 bit</span> //pmanager.win.rpi.edu/ci4034lw<br/>
+					<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/ci4034lw<br/>
+				</div><div style='height:10px'></div>
+
+			</div><!--end cii-->
+
+
+			<!-- CII MAP -->
+			<div id='cii-map' class='map' style='display:none'>
+				<div class='floor-selector'>All</div>
+				<div class='floor-selector'>floor 3000</div>
+				<div class='floor-selector'>floor 4000</div>
+				<div style='clear:both'></div>
+
+				
+				<div class='map-img cii-map' id='floor-3000'>
+				<div class='floor'>floor 3000</div>
+				<img src='img/cii3000.png'/></div>
+				
+				<div class='map-img cii-map' id='floor-4000'>
+				<div class='floor'>floor 4000</div>
+				<img src='img/cii4000.png'/></div>
+			</div><!--end cii map-->
+
+
+			<!-- DORM PRINTERS -->
+			<div id='dorms' class='printer-list' style='display:none'>
+
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+				<div class='printer'>dorms printer</div>
+			
+			</div><!--end dorm-->
+
+
+			<!-- GREENE PRINTERS -->
+			<div id='greene' class='printer-list' style='display:none'>
+
+				<div class='printer'>greene printer</div>
+				<div class='printer'>greene printer</div>
+				<div class='printer'>greene printer</div>
+				<div class='printer'>greene printer</div>
+			
+			</div><!--end greene-->
+
+
+
+			<!-- JEC PRINTERS -->
+			<div id='jec' class='printer-list' style='display:none'>
+
+				<div class='printer'>jec printer</div>
+				<div class='printer'>jec printer</div>
+				<div class='printer'>jec printer</div>
+				<div class='printer'>jec printer</div>
+			
+			</div><!--end jec-->
+
+
+
+			<!-- LALLY PRINTERS -->
+			<div id='lally' class='printer-list' style='display:none'>
+
+				<div class='printer'>lally printer</div>
+				<div class='printer'>lally printer</div>
+				<div class='printer'>lally printer</div>
+			
+			</div><!--end lally-->
+
+
+
+			<!-- LIBRARY PRINTERS -->
+			<div id='library' class='printer-list' style='display:none'>
+
+				<div class='printer'>library printer</div>
+				<div class='printer'>library printer</div>
+				<div class='printer'>library printer</div>
+				<div class='printer'>library printer</div>
+				<div class='printer'>library printer</div>
+			
+			</div><!--end library-->
+
+
+
+			<!-- MRC PRINTERS -->
+			<div id='mrc' class='printer-list' style='display:none'>
+
+				<div class='printer'>mrc printer</div>
+			
+			</div><!--end mrc-->
+
+
+
+			<!-- PITTSBURGH PRINTERS -->
+			<div id='pittsburgh' class='printer-list' style='display:none'>
+
+				<div class='printer'>pittsburgh printer</div>
+				<div class='printer'>pittsburgh printer</div>
+				<div class='printer'>pittsburgh printer</div>
+				<div class='printer'>pittsburgh printer</div>
+			
+			</div><!--end pittsburgh-->
+
+
+			<!-- SAGE LABS PRINTERS -->
+			<div id='sage-labs' class='printer-list' style='display:none'>
+
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+				<div class='printer'>sage labs printer</div>
+			
+			</div><!--end sage labs-->
+
+
+			<!-- TROY PRINTERS -->
+			<div id='troy' class='printer-list' style='display:none'>
+
+				<div class='printer'>troy printer</div>
+				<div class='printer'>troy printer</div>
+				<div class='printer'>troy printer</div>
+				<div class='printer'>troy printer</div>
+			
+			</div><!--end troy-->
+
+
+			<!-- UNION PRINTERS -->
+			<div id='union' class='printer-list' style='display:none'>
+
+				<div class='printer'>union printer</div>
+				<div class='printer'>union printer</div>
+				<div class='printer'>union printer</div>
+				<div class='printer'>union printer</div>
+			
+			</div><!--end union-->
+
+
+			<!-- VCC PRINTERS -->
+			<div id='vcc' class='printer-list' style='display:none'>
+
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+				<div class='printer'>vcc printer</div>
+			
+			</div><!--end vcc-->
+
+
+			<!-- WALKER PRINTERS -->
+			<div id='walker' class='printer-list' style='display:none'>
+
+				<div class='printer'>walker printer</div>
+				<div class='printer'>walker printer</div>
+			
+			</div><!--end walker-->
+
+
+			<!-- MAP -->
+			<div id='map' style='display:none'>
+			<div class='floor'>floor 3</div>
+			<div class='floor'>floor 2</div>
+			<div class='floor'>floor 1</div>
+			</div><!--end map-->
+
+
+			<div style='clear:both'></div>
+
+		</div><!--end content-->
+		
+		<div style='clear:both'></div>
+
+		<!-- Footer
+		================================================== -->
+		<footer class="footer">
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>Copyright &copy; RPI Student Senate 2012</p>
+			<p>Designed by the <a href="http://webtech.union.rpi.edu" target="_blank">Web Technologies Group</a> of the <a href="http://studentsenate.rpi.edu" target="_blank">RPI Student Senate</a>.</p>
+			<p>Issues, problems, or concerns?  <a href="http://webtech.union.rpi.edu/ticket">Report it.</a></p>
+			<a href="http://wiki.studentsenate.rpi.edu/w/Privacy_Policy">Privacy Policy</a>
+		</footer>
+
+	</div><!--end container-->
+</body>
+</html>

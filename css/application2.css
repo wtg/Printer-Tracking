@@ -1,0 +1,120 @@
+body { background:#f5f5f5; }
+header {
+	height:50px;
+	background:#666;
+	margin-bottom:20px;
+}
+div#header {
+	padding:15px 0px;
+	font-weight:bold;
+	font-size:15pt;
+	width:935px;
+	margin:auto;
+	color:#f5f5f5;
+}
+footer {
+	margin-left:150px;
+}
+div#content {
+	float:left;
+	background:#fff;
+	width:785px;
+	min-height:700px;
+	border-radius:5px;
+	padding:20px 0px;
+}
+
+/* LOCATIONS */
+div#locations {
+	float:left;
+	width:150px;
+}
+div#locations div.loc {
+	margin:0px 5px 5px 5px;
+	background:#fff;
+	padding:10px 20px;
+	border-radius:5px;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+div#locations div.loc:hover {
+	cursor:pointer;
+	padding-left:30px;
+	-moz-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	-webkit-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+div#locations div.selected {
+	background:#C7DFF5; /*light blue*/
+}
+
+/* PRINTERS */
+div.printer-list {
+	float:left;
+	margin:0px 20px;
+}
+div.printer {
+	width:280px;
+	padding:10px 10px;
+	border-radius:5px;
+}
+div.printer:hover {
+	cursor:pointer;
+	background:#eef6fd; /*lightest blue*/
+}
+div.printer span.name {
+	font-size:15pt;
+	font-weight:bold;
+	color:#41739f;
+}
+div.printer span.on {
+	text-transform:uppercase;
+	font-weight:bold;
+	float:right;
+	color:#00c322; /*green*/
+}
+div.printer span.italic {
+	font-style:italic;
+}
+.label {
+	background:#9eacb8;
+}
+
+/* DETAILS */
+div.details {
+	padding:0px 10px;
+}
+
+
+/* MAPS */
+div.map {
+	float:left;
+	width:415px;
+}
+div.floor-selector {
+	padding:5px 20px;
+	float:left;
+	margin:0px 10px 0px 0px;
+	font-size:9pt;
+	font-weight:bold;
+	letter-spacing:1px;
+	border-radius:10px;
+}
+div.floor-selector:hover {
+	cursor:pointer;
+	text-decoration:underline;
+	-moz-transition: all 0.25s ease-out;
+	-o-transition: all 0.25s ease-out;
+	-webkit-transition: all 0.25s ease-out;
+	-ms-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+div.floor {
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#41739f;
+	border-bottom:1px solid #41739f;
+	margin:20px 0px 5px 0px;
+}
