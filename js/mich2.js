@@ -1,4 +1,31 @@
 $(document).ready( function() {
+	// Load Printer Locations
+	$.getJSON('data/printers.json',function(data){
+		for(var i = 0; i < data.locations.length; i++)
+		{
+		    if(i == 0)
+		    {
+			$('#locations').append("<div class='loc selected'>"+data.locations[i].location+"</div>");
+		    }
+		    else
+		    {
+			$('#locations').append("<div class='loc'>"+data.locations[i].location+"</div>");
+		    }
+		    
+
+		    
+		    var printers = data.locations[i].printers;
+		    for(var j = 0; j < printers.length; j++)
+		    {
+			
+		    }
+		}
+		init();
+	});
+    });
+
+function init()
+{
 	$('div#locations div.loc').click( function() {
 		$('div#locations div.loc').each( function( i, obj ) {
 			//if any other location is selected
@@ -43,4 +70,4 @@ $(document).ready( function() {
 			});
 		}
 	});
-});
+};

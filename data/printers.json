@@ -1,0 +1,553 @@
+{
+	"locations":
+	[
+		{
+                        "location": "Amos Eaton",
+                        "file": "ae.json",
+                        "left": "1",
+                        "printers":
+                        [
+				{
+					"name": "ae215lw",
+					"loc": "AE 215",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name":	"ae216lw",
+					"loc": "AE 216",
+					"type":	"Black",
+					"size": "Printer"
+                                }					
+			]
+		},
+        {
+			"location": "CII",
+                        "file": "cii.json",
+                        "left": "3",
+                        "printers":
+			[
+				{
+					"name": "ci3112lw",
+					"loc": "CII 3112",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ci3116lw",
+					"loc": "CII 3116",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ci3130lw",
+					"loc": "CII 3130",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ci3130p3",
+					"loc": "CII 3130",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "ci4034lw",
+					"loc": "CII 4034",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+        {
+			"location": "Dorm",
+			"file": "dorms.json",
+			"left": "5",
+			"printers":
+			[
+				{
+					"name": "bh1a09lw",
+					"loc": "BARH 109",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "balw",
+					"loc": "Next to 3120",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "bllw",
+					"loc": "Blitman 1327",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "brlw",
+					"loc": "Bray 3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "crlw",
+					"loc": "Crockett 3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "cylw",
+					"loc": "Cary 3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "halw",
+					"loc": "Hall 3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "hu2lw",
+					"loc": "Hunt II 1002",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "nalw",
+					"loc": "Nason 3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ptlw",
+					"loc": "Polytech 101",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "walw",
+					"loc": "Warren 111",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+        		{
+			"location": "Greene",
+                        "file": "greene.json",
+                        "left": "2",
+                        "printers":
+			[
+				{
+					"name": "gr306lw",
+					"loc": "Greene 306",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "gr306cb",
+					"loc": "Greene 306",
+					"type": "Color Duplex",
+					"size": "B-Printer"
+				},
+				{
+					"name": "gr306cl",
+					"loc": "Greene 306",
+					"type": "Color Duplex",
+					"size": "Printer"
+				},
+				{
+					"name": "gr306cbg",
+					"loc": "Greene 306",
+					"type": "Color Glossy",
+					"size": "B-Printer"
+				}
+			]
+		},
+        		{
+			"location": "JEC",
+                        "file": "jec.json",
+                        "left": "2",
+                        "printers":
+                        [
+				{
+					"name": "ec3207lw",
+					"loc": "JEC 3207",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ec3232lw",
+					"loc": "JEC 3232",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ec4201l1",
+					"loc": "JEC 4201",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "ec4201l2",
+					"loc": "JEC 4201",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+		{
+			"location": "Lally",
+                        "file": "lally.json",
+                        "left": "2",
+                        "printers":
+                        [
+				{
+					"name": "la02lw",
+					"loc": "Lally 02",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "la102lw",
+					"loc": "Lally 102",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "la104lw",
+					"loc": "Lally 104",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+        {
+			"location": "Library",
+			"file": "library.json",
+			"left": "3",
+			"printers":
+			[
+				{
+					"name": "li1f1lw",
+					"loc": "1st Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "li2f1lw",
+					"loc": "2nd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "li2f2p3",
+					"loc": "2nd Floor",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "li3f1lw",
+					"loc": "3rd Floor",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "li4f1lw",
+					"loc": "4th Floor",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+        {
+                        "location": "MRC",
+                        "file": "mrc.json",
+                        "left": "1",
+                        "printers":
+                        [
+				{
+					"name": "mrc136lw",
+					"loc": "MRC 136",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+				{
+			"location": "Pittsburgh",
+			"file": "pittsburgh.json",
+			"left": "2",
+                        "printers":
+			[
+
+				{
+					"name": "pi1002lw",
+					"loc": "Pittsburgh 1002",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "pi1002p3",
+					"loc": "Pittsburgh 1002",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "pi4114lw",
+					"loc": "Pittsburgh 4114",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "pi4206lw",
+					"loc": "Pittsburgh 4206",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+		{
+			"location": "Sage Lab",
+                        "file": "sage.json",
+                        "left": "4",
+                        "printers":
+			[
+				{
+					"name": "sa2704lw",
+					"loc": "Sage 2704",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "sa2715lw",
+					"loc": "Sage 2715",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "sa3101lw",
+					"loc": "Sage 3103",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "sa3101p3",
+					"loc": "Sage 3101",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "sa4101lw",
+					"loc": "Sage 4101",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "sa4510lw",
+					"loc": "Sage 4510",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "sa5101lw",
+					"loc": "Sage 5101",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+		{
+			"location": "Troy",	
+			"file": "troy.json",
+			"left": "2",
+                        "printers":
+			[
+				{
+					"name": "tr2012lw",
+					"loc": "Troy 2012",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "tr2012p3",
+					"loc": "Troy 2012",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "tr2015lw",
+					"loc": "Troy 2015",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "tr2018lw",
+					"loc": "Troy 2018",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+
+		},
+        {
+			"location": "Union",
+			"file": "union.json",
+			"left": "2",
+			"printers":
+			[
+				{
+					"name": "ru3120lw",
+					"loc": "SGS",
+					"type": "Black",
+					"size": "Printer" 
+				},
+				{
+					"name": "ru3120cl",
+					"loc": "SGS",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "ru3120cb",
+					"loc": "SGS",
+					"type": "Color",
+					"size": "B-Printer"
+				},
+				{
+					"name": "ru2fwdlw",
+					"loc": "Welcome Lobby",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		},
+
+        {
+			"location": "VCC",
+			"file": "vcc.json",
+			"left": "6",
+			"printers":
+			[
+				{
+					"name": "vcnrthlw",
+					"loc": "VCC North",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "vcsoutp3",
+					"loc": "VCC South",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "vcsoutlw",
+					"loc": "VCC South",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "vcsoutb",
+					"loc": "VCC South",
+					"type": "Black",
+					"size": "B-Printer"
+				},
+				{
+					"name": "vcpap3",
+					"loc": "VCC Lobby",
+					"type": "Color",
+					"size": "Printer"
+				},
+				{
+					"name": "vcpalw",
+					"loc": "VCC Lobby",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "vcplt",
+					"loc": "Print Room",
+					"type": "Plain Paper",
+					"size": "Plotter"
+				},
+				{
+					"name": "vcpltg",
+					"loc": "Print Room",
+					"type": "Glossy Paper",
+					"size": "Plotter"
+				},
+				{
+					"name": "vcpltcf",
+					"loc": "Print Room",
+					"type": "Clear Film",
+					"size": "Plotter"
+				},
+				{
+					"name": "vc750let",
+					"loc": "Print Room",
+					"type": "Color Duplex",
+					"size": "Printer"
+				},
+				{
+					"name": "vc750ovr",
+					"loc": "Print Room",
+					"type": "Color Transparency",
+					"size": "Printer"
+				},
+				{
+					"name": "vclw",
+					"loc": "Print Room",
+					"type": "Black Duplex",
+					"size": "Printer"
+				},
+				{
+					"name": "vcblw",
+					"loc": "Print Room",
+					"type": "Black",
+					"size": "B-Printer"
+				},
+				{
+					"name": "vclbl30",
+					"loc": "Print Room",
+					"type": "Black",
+					"size": "Label Printer"
+				},
+				{
+					"name": "vcph3let",
+					"loc": "Print Room",
+					"type": "Color Duplex",
+					"size": "Printer"
+				},
+				{
+					"name": "vc7750b",
+					"loc": "Print Room",
+					"type": "Color Duplex",
+					"size": "B-Printer"
+				}
+			]
+		},
+        {
+            "location": "Walker",
+            "file": "walker.json",
+            "left": "1",
+            "printers":
+            [
+				{
+					"name": "wl5113lw",
+					"loc": "Walker 5113",
+					"type": "Black",
+					"size": "Printer"
+				},
+				{
+					"name": "wl6113lw",
+					"loc": "Walker 6113",
+					"type": "Black",
+					"size": "Printer"
+				}
+			]
+		}
+        
+	]
+}
