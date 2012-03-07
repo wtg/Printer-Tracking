@@ -13,16 +13,66 @@ $(document).ready( function() {
 		    }
 		    
 
-		    
+		    // Load Printers
+		    var output = "<div id='"+remove_spaces(data.locations[i].location)+"' class='printer-list'>";
 		    var printers = data.locations[i].printers;
 		    for(var j = 0; j < printers.length; j++)
 		    {
-			
+			output+= "<div class='printer'>"+
+                                        "<span class='name'>"+printers[j].name+"</span> [ "+printers[j].loc+" ]<span class='on'>status</span><br/>"+
+                                        "<span class='italic'>No jobs in queue.</span>"+
+                                "</div>"+
+                                "<div class='details' style='display:none'>"+
+	  	 	        "<span class='label'>Color</span> "+translate_color(printers[j].type)+"<br/>"+
+			            "<span class='label'>Type</span> "+printers[j].size+"<br/>"+
+			    "<span class='label'>Cost</span> "+translate_cost(printers[j].type,printers[j].size)+"<br/>"+
+				    "<span class='label'>32 bit</span> //pmanager.win.rpi.edu/"+printers[j].name+"<br/>"+
+				    "<span class='label'>64 bit</span> //pmanager64.win.rpi.edu/"+printers[j].name+"<br/>"+
+			        "</div><div style='height:10px'></div>";
+		    }
+		    output += "</div>";
+		    // Load Printers
+		    
+
+		    // Load Maps
+		    
+		    // Load Maps
+		    $("#content").append(output);
+
+		    if(i > 0) // Hide all inactive location data
+		    {
+			$("#"+remove_spaces(data.locations[i].location)).css( 'display', 'none' );
+			$("#"+remove_spaces(data.locations[i].location)+"-map").css( 'display', 'none' );
 		    }
 		}
 		init();
 	});
     });
+
+function remove_spaces(word)
+{
+    return word.replace(" ","-").toLowerCase();;
+}
+
+function translate_color(type)
+{
+    if(type == "Black")
+	return "Black &amp; White";
+    else if(type == "Color")
+	return "Color";
+}
+
+function translate_cost(type,size)
+{
+    if(type == "Black" && size == "Printer")
+    {
+	return "$0.08/page + $0.02/job";
+    }
+    else if(type == "Color" && size == "Printer")
+    {
+	return "$0.20/page + $0.20/job";
+    }
+}
 
 function init()
 {
