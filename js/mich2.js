@@ -58,8 +58,8 @@ function translate_color(type)
 {
     if(type == "Black")
 	return "Black &amp; White";
-    else if(type == "Color")
-	return "Color";
+    else
+	return type;
 }
 
 function translate_cost(type,size)
@@ -71,6 +71,42 @@ function translate_cost(type,size)
     else if(type == "Color" && size == "Printer")
     {
 	return "$0.20/page + $0.20/job";
+    }
+    else if(type == "Plain Paper" && size == "Plotter")
+    {
+	return "$1.25 to $2.25 per ft.";
+    }
+    else if(type == "Glossy Paper" && size == "Plotter")
+    {
+	return "$2.00 to $3.00 per ft.";
+    }
+    else if(type == "Clear Film" && size == "Plotter")
+    {
+	return "$2.25 to $3.25 per ft.";
+    }
+    else if(type == "Color Duplex" && size == "Printer")
+    {
+	return "Single side: $0.20/page + $0.20/job Duplex: $0.30/page + $0.20/job";
+    }
+    else if(type == "Black Duplex" && size == "Printer")
+    {
+	return "Single side: $0.08/page + $0.02/job Duplex: $0.12/page + $0.02/job";
+    }
+    else if(type == "Color Duplex" && size == "B-Printer")
+    {
+	return "Single side: $0.20/page + $0.20/job Duplex: $0.30/page + $0.20/job";
+    }
+    else if(type == "Black" && size == "Label Printer")
+    {
+	return "$0.20/page + $0.20/job";
+    }
+    else if(type == "Black" && size == "B-Printer")
+    {
+	return "$0.20/page + $0.10/job";
+    }
+    else if(type == "Color Transparency" && size == "Printer")
+    {
+	return "$1.00/page + $0.20/job";
     }
 }
 
